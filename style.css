@@ -132,6 +132,7 @@ input {
     border-radius: 50%;
     border: solid 1px;
     cursor: pointer;
+    background-color: var(--background-number);
     caret-color: var(--caret-color);
 }
 

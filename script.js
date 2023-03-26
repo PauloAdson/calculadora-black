@@ -22,7 +22,7 @@ botaoApagarTudo.addEventListener('click', () => {
 
 //CODIGO DO TEMA
 
-//ESSA CÓDIGO SERVE PARA CARREGAR O CONTEÚDO HTML ANTES DO JS .>
+//ESSE CÓDIGO SERVE PARA CARREGAR O CONTEÚDO HTML ANTES DO JS .>
 document.addEventListener("DOMContentLoaded", function() {
   
   const button = document.querySelector('.js-theme');

@@ -28,8 +28,8 @@ document.addEventListener("DOMContentLoaded", function() {
   const button = document.querySelector('.js-theme');
 
   const themes = {
-    't-light': 't-dark',
     't-dark': 't-light',
+    't-light': 't-dark',
   };
 
   if (button) {
@@ -37,11 +37,11 @@ document.addEventListener("DOMContentLoaded", function() {
       event.preventDefault();
 
       const currentTheme = document.body.dataset.theme;
-      document.body.setAttribute('data-theme', themes[currentTheme] || 't-light');
+      document.body.setAttribute('data-theme', themes[currentTheme] || 't-dark');
     });
   }
 
   // seta o tema padrão
-  document.body.setAttribute('data-theme', 't-light');
+  document.body.setAttribute('data-theme', 't-dark');
 });
 //TERMINA AQUI .>

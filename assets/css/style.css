@@ -6,7 +6,7 @@
 }
 
 body[data-theme="t-light"]{
-    --icon-color: #000;
+    --icon-color: #ffffff;
     --background-calculator: rgba(255, 255, 255, 0.1);
     --background: linear-gradient(120deg, #00cac7, #e239aa);
     --font-color: #000;

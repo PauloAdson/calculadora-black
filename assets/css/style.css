@@ -5,21 +5,10 @@
   padding: 0;
 }
 
-body {
-
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--background);
-}
-
-
 body[data-theme="t-light"]{
     --icon-color: #000;
-    --background-calculator: #fff;
-    --background: #fff;
+    --background-calculator: rgba(255, 255, 255, 0.1);
+    --background: linear-gradient(120deg, #00cac7, #e239aa);
     --font-color: #000;
     --background-number: #fff;
     --border-color: #000;
@@ -33,7 +22,7 @@ body[data-theme="t-light"]:hover {
 body[data-theme="t-dark"]{
     --icon-color: #fff;
     --background-calculator: #23262e;
-    --background: #000;
+    --background: linear-gradient(120deg, #422779, #910161);
     --font-color: #fff;
     --background-number: #000;
     --border-color: none;
@@ -43,6 +32,17 @@ body[data-theme="t-dark"]{
 body[data-theme="t-dark"]:hover{
     --number-background-hover: #4a5053;
 }
+
+body {
+
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--background);
+}
+
 
 .main {
     position: relative;
@@ -63,7 +63,7 @@ body[data-theme="t-dark"]:hover{
 
 .apagar {
     color: var(--icon-color);
-    background-color: var(--background-calculator);
+    background: none;
     position: absolute;
     top: 0;
     left: 0;
@@ -71,6 +71,10 @@ body[data-theme="t-dark"]:hover{
     cursor: pointer;
     border: none;
     transform: rotate(45deg);
+}
+
+svg {
+    background: none;
 }
 
 .rotate svg{

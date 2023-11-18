@@ -10,9 +10,9 @@ body[data-theme="t-light"]{
     --background-calculator: rgba(255, 255, 255, 0.1);
     --background: linear-gradient(120deg, #00cac7, #e239aa);
     --font-color: #000;
-    --background-number: #fff;
+    --background-number: #ffffff;
     --border-color: #000;
-    --caret-color: #fff;
+    --caret-color: #ffffff;
 }
 body[data-theme="t-light"]:hover {
     --number-background-hover: #c0ccd5;
@@ -20,10 +20,10 @@ body[data-theme="t-light"]:hover {
 
 
 body[data-theme="t-dark"]{
-    --icon-color: #fff;
+    --icon-color: #ffffff;
     --background-calculator: #23262e;
     --background: linear-gradient(120deg, #422779, #910161);
-    --font-color: #fff;
+    --font-color: #ffffff;
     --background-number: #000;
     --border-color: none;
     --caret-color: #000;

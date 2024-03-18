@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@100&family=Roboto&display=swap');
 
-* {
-  margin: 0;
-  padding: 0;
+:root {
+    --color-font-footer: #f7f7f7;
 }
 
-body[data-theme="t-light"]{
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body[data-theme="t-light"] {
     --icon-color: #ffffff;
     --background-calculator: rgba(255, 255, 255, 0.1);
     --background: linear-gradient(120deg, #00cac7, #e239aa);
@@ -14,12 +18,13 @@ body[data-theme="t-light"]{
     --border-color: #000;
     --caret-color: #ffffff;
 }
+
 body[data-theme="t-light"]:hover {
     --number-background-hover: #c0ccd5;
 }
 
 
-body[data-theme="t-dark"]{
+body[data-theme="t-dark"] {
     --icon-color: #ffffff;
     --background-calculator: #23262e;
     --background: linear-gradient(120deg, #422779, #910161);
@@ -29,18 +34,17 @@ body[data-theme="t-dark"]{
     --caret-color: #000;
 }
 
-body[data-theme="t-dark"]:hover{
+body[data-theme="t-dark"]:hover {
     --number-background-hover: #4a5053;
 }
 
 body {
-
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--background);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--background);
 }
 
 
@@ -49,9 +53,9 @@ body {
 }
 
 .icon-sun {
- color: var(--icon-color);
+    color: var(--icon-color);
 
- margin: 25px;
+    margin: 25px;
 
 }
 
@@ -77,31 +81,32 @@ svg {
     background: none;
 }
 
-.rotate svg{
-        position: absolute;
-        top: 0;
-        right: 0;
-        transform-origin: center;
-        animation: spin 2.8s linear infinite;
-      }
-      
-      @keyframes spin {
-        from {
-          transform: rotate(0deg);
-        }
-        to {
-          transform: rotate(360deg);
-        }
-      }
+.rotate svg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform-origin: center;
+    animation: spin 2.8s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
 
 
 input {
     color: var(--font-color);
     padding: 17px;
     outline: none;
-
-    font-size: 30px;
     font-family: 'Bebas Neue', cursive;
+    font-size: 30px;
+    
 
     border-radius: 25%;
 
@@ -148,6 +153,7 @@ input {
     border: solid 1px var(--border-color);
     background-color: var(--background-calculator);
 }
+
 .maincolor {
     background-color: var(--background-number);
 
@@ -160,6 +166,7 @@ input {
 .blue {
     background-color: #0cd0cd;
 }
+
 .blue:hover {
     background-color: #088381;
 }
@@ -197,17 +204,32 @@ input {
 }
 
 
+footer {
+    height: 64px;
+    position: absolute;
+    bottom: 0;
+}
+
+footer p, a{
+    color: var(--color-font-footer);
+    font-family: 'Roboto', cursive;
+}
+
+footer a:hover {
+    opacity: 0.7;
+}
+
 /*PARA CELULAR*/
 
 @media (max-width:330px) {
-    
+
     .num {
         width: 38px;
         height: 40px;
         margin: 1px;
         border: solid 1px;
     }
-    
+
     .text1 {
         width: 101px;
         height: 20px;
@@ -218,8 +240,8 @@ input {
         margin-bottom: 12px;
         pointer-events: none;
     }
-    
-    
+
+
     .text2 {
         width: 39px;
         height: 39px;
@@ -231,8 +253,8 @@ input {
         background-color: var(--background-number);
         caret-color: var(--caret-color);
     }
-    
-    
+
+
     .main {
         display: inline-block;
         padding: 40px 15px;
@@ -245,21 +267,21 @@ input {
         color: var(--font-color);
         padding: 10px;
         outline: none;
-    
+
         font-size: 18px;
         font-family: 'Bebas Neue', cursive;
-    
+
         border-radius: 25%;
-    
+
         cursor: pointer;
-    
+
     }
 
     #meu-input {
         font-size: 13px;
     }
 
-    svg{
+    svg {
         width: 20px;
         height: 20px;
     }

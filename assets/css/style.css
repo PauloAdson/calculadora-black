@@ -224,6 +224,12 @@ footer a:hover {
 /*PARA CELULAR*/
 
 @media (max-width:767px) {
+    .main {
+        margin-bottom: 5rem;
+    }
+}
+
+@media (max-width:330px) {
 
     .num {
         width: 38px;
@@ -260,7 +266,6 @@ footer a:hover {
     .main {
         display: inline-block;
         padding: 40px 15px;
-        margin-bottom: 5rem;
         border-radius: 20px;
         border: solid 1px var(--border-color);
         background-color: var(--background-calculator);

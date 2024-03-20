@@ -225,8 +225,8 @@ footer a:hover {
 /*PARA CELULAR*/
 
 @media (max-width:767px) {
-    .main {
-        margin-bottom: 32px;
+    footer {
+        height: 32px;
     }
 }
 

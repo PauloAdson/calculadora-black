@@ -223,7 +223,7 @@ footer a:hover {
 
 /*PARA CELULAR*/
 
-@media (max-width:330px) {
+@media (max-width:767px) {
 
     .num {
         width: 38px;

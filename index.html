@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,67 +10,75 @@
     <link rel="stylesheet" href="assets/css/media-query.css">
     <link rel="stylesheet" href="assets/css/reset.css">
     <title>Calculadora</title>
-    
+
 </head>
+
 <body>
 
-        <div class="main">
 
-            <div class="theme">
-                <button class="button-theme js-theme rotate" type="button">
-                    <svg class="icon-sun" width="30" height="30" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 7a5 5 0 1 0 0 10 5 5 0 1 0 0-10z"></path>
-                        <path d="M12 1v2"></path>
-                        <path d="M12 21v2"></path>
-                        <path d="m4.22 4.22 1.42 1.42"></path>
-                        <path d="m18.36 18.36 1.42 1.42"></path>
-                        <path d="M1 12h2"></path>
-                        <path d="M21 12h2"></path>
-                        <path d="m4.22 19.78 1.42-1.42"></path>
-                        <path d="m18.36 5.64 1.42-1.42"></path>
-                    </svg>
-                </button>
-            </div>
+    <div class="main">
 
-            <div>
-                <button id="botao-apagar" class="apagar botao-apagar" type="button">
-                    <svg width="30" height="30" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 4v16m-8-8h16"></path>
-                      </svg>
-                </button>
-            </div>
-
-            <form action="" name="Calculator">
-
-                <input type="text" class="text1 maincolor" id="meu-input" name="text1" disabled>
-                <input type="button" class="text2" id="botao-apagar-tudo" name="text12" value="C"><br>
-
-                <input type="button" class="num maincolor" name="button9" value="9" onclick="displaynum(button9.value)">
-                <input type="button" class="num maincolor" name="button8" value="8" onclick="displaynum(button8.value)">
-                <input type="button" class="num maincolor" name="button7" value="7" onclick="displaynum(button7.value)">
-                <input type="button" class="num blue" name="addbutton" value="+" onclick="displaynum(addbutton.value)"><br>
-
-                <input type="button" class="num maincolor" name="button6" value="6" onclick="displaynum(button6.value)">
-                <input type="button" class="num maincolor" name="button5" value="5" onclick="displaynum(button5.value)">
-                <input type="button" class="num maincolor" name="button4" value="4" onclick="displaynum(button4.value)">
-                <input type="button" class="num pink" name="subbutton" value="-" onclick="displaynum(subbutton.value)"><br>
-
-                <input type="button" class="num maincolor" name="button3" value="3" onclick="displaynum(button3.value)">
-                <input type="button" class="num maincolor" name="button2" value="2" onclick="displaynum(button2.value)">
-                <input type="button" class="num maincolor" name="button1" value="1" onclick="displaynum(button1.value)">
-                <input type="button" class="num green" name="multbutton" value="*" onclick="displaynum(multbutton.value)"><br>
-
-                <input type="button" class="num maincolor" name="dot" value="." onclick="displaynum(dot.value)">
-                <input type="button" class="num maincolor" name="button0" value="0" onclick="displaynum(button0.value)">
-                <input type="button" class="num purple" name="eqlbutton" value="=" onclick="text1.value=eval(text1.value)">
-                <input type="button" class="num orange" name="divbutton" value="/" onclick="displaynum(divbutton.value)"><br>
-                
-            </form>
+        <div class="theme">
+            <button class="button-theme js-theme rotate" type="button">
+                <svg class="icon-sun" width="30" height="30" fill="none" stroke="currentColor" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 7a5 5 0 1 0 0 10 5 5 0 1 0 0-10z"></path>
+                    <path d="M12 1v2"></path>
+                    <path d="M12 21v2"></path>
+                    <path d="m4.22 4.22 1.42 1.42"></path>
+                    <path d="m18.36 18.36 1.42 1.42"></path>
+                    <path d="M1 12h2"></path>
+                    <path d="M21 12h2"></path>
+                    <path d="m4.22 19.78 1.42-1.42"></path>
+                    <path d="m18.36 5.64 1.42-1.42"></path>
+                </svg>
+            </button>
         </div>
 
-        <footer>
-            <p>Desenvolvido por <a href="https://pauloadson.github.io/portfolio/">Paulo Adson</a></p>
-        </footer>
+        <div>
+            <button id="botao-apagar" class="apagar botao-apagar" type="button">
+                <svg width="30" height="30" fill="none" stroke="currentColor" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 4v16m-8-8h16"></path>
+                </svg>
+            </button>
+        </div>
+
+        <form action="" name="Calculator">
+
+            <input type="text" class="text1 maincolor" id="meu-input" name="text1" disabled>
+            <input type="button" class="text2" id="botao-apagar-tudo" name="text12" value="C"><br>
+
+            <input type="button" class="num maincolor" name="button9" value="9" onclick="displaynum(button9.value)">
+            <input type="button" class="num maincolor" name="button8" value="8" onclick="displaynum(button8.value)">
+            <input type="button" class="num maincolor" name="button7" value="7" onclick="displaynum(button7.value)">
+            <input type="button" class="num blue" name="addbutton" value="+" onclick="displaynum(addbutton.value)"><br>
+
+            <input type="button" class="num maincolor" name="button6" value="6" onclick="displaynum(button6.value)">
+            <input type="button" class="num maincolor" name="button5" value="5" onclick="displaynum(button5.value)">
+            <input type="button" class="num maincolor" name="button4" value="4" onclick="displaynum(button4.value)">
+            <input type="button" class="num pink" name="subbutton" value="-" onclick="displaynum(subbutton.value)"><br>
+
+            <input type="button" class="num maincolor" name="button3" value="3" onclick="displaynum(button3.value)">
+            <input type="button" class="num maincolor" name="button2" value="2" onclick="displaynum(button2.value)">
+            <input type="button" class="num maincolor" name="button1" value="1" onclick="displaynum(button1.value)">
+            <input type="button" class="num green" name="multbutton" value="*"
+                onclick="displaynum(multbutton.value)"><br>
+
+            <input type="button" class="num maincolor" name="dot" value="." onclick="displaynum(dot.value)">
+            <input type="button" class="num maincolor" name="button0" value="0" onclick="displaynum(button0.value)">
+            <input type="button" class="num purple" name="eqlbutton" value="=" onclick="text1.value=eval(text1.value)">
+            <input type="button" class="num orange" name="divbutton" value="/"
+                onclick="displaynum(divbutton.value)"><br>
+
+        </form>
+    </div>
+
+
+
+    <footer>
+        <p>Desenvolvido por <a href="https://pauloadson.github.io/portfolio/">Paulo Adson</a></p>
+    </footer>
 
 
     <script src="./assets/js/script.js"></script>

@@ -227,10 +227,6 @@ footer a:hover {
     .main {
         margin-bottom: 5rem;
     }
-
-    footer {
-        margin-top: 32px;
-    }
 }
 
 @media (max-width:330px) {
